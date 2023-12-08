@@ -1,7 +1,7 @@
 # CSS Right menu
 **If you need a very good css Right menu for your CMS or Website, you can use this source code.**
 
-- __[see demo](https://nodeca.github.io/pica/demo/)__ -
+[link text](https://htaria.github.io/css-Right-menu/)
 
 When I was developing the front-end part of a cms, I created this Right menu.
 
