@@ -34,7 +34,9 @@ $white :#ffffff;
 @import "../bootstrap/scss/_variables.scss";
 // Merge the maps
 @import "../bootstrap/scss/bootstrap";
+@import "./components/scrollbar-styles";
 @import "./fonts";
-@import "./Utilities";
 @import "./sidebar";
+@import "./header";
 @import "./main";
+@import "./Utilities";

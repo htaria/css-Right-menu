@@ -1,26 +1,51 @@
 .sidebar {
-    width: 3.5rem;
+    width: 4rem;
     height: 100vh;
     position: relative;
     background-color: white;
     transition: all .5s;
     padding-right: .8rem;
     font-size: 15px;
-    overflow: auto;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    overflow-y: auto;
+    overflow-x: hidden;
 
-    &::-webkit-scrollbar {
-        display: none;
+    scrollbar-color: #aaa #f1f1f1;
+    scrollbar-width: thin;
+
+    /* Firefox */
+    &::-webkit-scrollbar-track {
+        background-color: #fff;
     }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #fff;
+    }
+
+    &:hover {
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #aaa;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #646464;
+        }
+    }
+
+    .sidebar-btn {
+        cursor: pointer;
+    }
+
 
     ul {
         padding-left: 0.5rem;
 
         .sidebar-item {
             overflow: hidden;
+
             .item-box {
                 overflow: hidden;
                 display: flex;
@@ -53,6 +78,7 @@
 
             .submenu {
                 display: none;
+
                 .submenu-item {
                     a {
                         padding: .3rem 1rem;
@@ -86,9 +112,13 @@
             }
         }
     }
+
+    h4 {
+        opacity: 0;
+        transition: all .3s;
+    }
+
 }
-
-
 
 
 .sidebar-toggle {
@@ -100,5 +130,9 @@
                 background-color: #f0f1f5;
             }
         }
+    }
+
+    h4 {
+        opacity: 1;
     }
 }
